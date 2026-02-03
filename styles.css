@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b3d91;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px 16px;
+}
+
+/* Contenedor principal */
+.app {
+  width: 360px;
+  background: #123a7a;
+  border-radius: 12px;
+  padding: 20px 22px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+.app h1 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+/* Zona carta */
+.mesa {
+  display: flex;
+  justify-content: center;
+  margin: 14px 0 10px;
+}
+
+.mesa img {
+  width: 170px;
+  border-radius: 12px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Info */
+.info {
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin: 12px 0 14px;
+}
+
+.info p {
+  margin: 8px 0;
+}
+
+#puntuacion {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#mensaje {
+  opacity: 0.95;
+}
+
+/* Botones */
+.botones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.botones button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.05s ease, opacity 0.2s ease;
+}
+
+.botones button:active {
+  transform: translateY(1px);
+}
+
+/* Colores por botón */
+#btnCarta {
+  background: #4da3ff;
+  color: #071225;
+}
+
+#btnPlanto {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#btnNueva {
+  grid-column: 1 / -1; /* ocupa toda la fila */
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  border: 1px dashed rgba(255, 255, 255, 0.35);
+}
+
+/* Estado deshabilitado */
+.botones button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siete y Media</title>
+
+    <!-- CSS principal de Vite (en la raíz) -->
+<link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <main class="app">
+      <h1>Juego de las 7 y 1/2</h1>
+
+      <div class="mesa">
+        <img
+          id="carta"
+          src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg"
+          alt="Carta boca abajo"
+        />
+      </div>
+
+      <div class="info">
+        <p>Puntuación: <span id="puntuacion">0</span></p>
+        <p id="mensaje">Pide carta para empezar</p>
+      </div>
+
+      <div class="botones">
+        <button id="btnCarta">Pedir carta</button>
+        <button id="btnPlanto">Me planto</button>
+        <button id="btnNueva" disabled>Nueva partida</button>
+      </div>
+    </main>
+
+    <!-- Entrada TypeScript (Vite) -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+
